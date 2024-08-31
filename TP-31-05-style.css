@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"rel="stylesheet">);
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  transition: 0.5s;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #001a69;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.memory-game {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 15%;
+  margin: 0 auto;
+  justify-content: center;
+  border-radius: 6px;
+}
+
+.card {
+  width: 85px;
+  height: 115px;
+  margin: 5px;
+  position: relative;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.card .card-inner {
+  background: url(./IMAGES/Logo-Dragon2.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+  color: transparent;
+  transition: color 0.3s ease;
+  border-radius: 6px;
+}
+
+.card.flipped .card-inner {
+  color: #e5c600;
+  background: #bad3f4;
+  border-radius: 6px;
+}
+
+#message,
+#attemps {
+  margin-bottom: 20px;
+  color: #ffff;
+  font-size: 40px;
+}
